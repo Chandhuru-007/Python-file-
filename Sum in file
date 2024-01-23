@@ -1,0 +1,25 @@
+f1=open("Subjectmark.txt","w")
+for i in range(5):
+	m=input('Enter the marks:')
+	f1.write(m)
+	f1.write("\n")
+f1.close()
+fp=open("Subjectmark.txt","r")
+
+lines=fp.readlines()
+
+sum=0
+
+print(lines)
+
+for i in lines:
+
+    num=int(i)
+
+    sum=sum+num
+
+    print(num)
+
+print("sum:",sum)
+
+fp.close()
